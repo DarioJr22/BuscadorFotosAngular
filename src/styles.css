@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.calculadora{
+    width: 540px; 
+    margin-top: 0px;
+        border: solid 1px #000;
+        padding: 20px;
+        background-color: #2E2E2E;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-shadow: 1px 1px 5px #000;
+        margin-bottom: 60px;
+      }
+
+.titulo{
+    color: white;
+}
+
+h1{
+    border-radius: 10px;
+    padding: 20px;
+}
+
+body{
+    background-color: #d9d9d9 ;
+}
+
+.preencher{
+    width: 100%;
+}

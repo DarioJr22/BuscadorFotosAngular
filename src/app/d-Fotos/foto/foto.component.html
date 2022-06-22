@@ -1,0 +1,37 @@
+
+
+        <div class = 'calculadora tamanho container col d-flex justify-content-center'>
+                <div class="form-group"><h1 class="bg-dark text-white">Buscador de Imagens 1.5</h1>
+                        <label class="titulo"for="exampleInputEmail1">Pesquise sua imagem.</label>
+                        
+                        <input id="Pesq"
+                        class="form-control p-3" 
+                        type="search"
+                        [(ngModel)] = 'Pesquisa'
+                        placeholder ="Termo de pesquisa"
+                        autofocus>
+                         <br>
+
+
+                         <input id="filter"
+                         class="form-control mt-3 mb-3" 
+                         type="search"
+                         (keyup)="debounce.next($event.target.value)"
+                         placeholder ="Valor á ser Filtrado">
+                          <br>
+                        <button class = "btn btn-secondary preencher" (click) = "searchPhotos()">Pesquisar</button>
+                        
+                </div>
+        </div>
+
+
+  <p class="text-center text-muted" *ngIf = "!data.length">
+        Sem fotos á exibir
+  </p>      
+  <app-exib-img [data]="data | filterByDescription: filter"> <button class = 'btn-primary'>Load Button</button></app-exib-img>
+
+  
+
+
+     
+        

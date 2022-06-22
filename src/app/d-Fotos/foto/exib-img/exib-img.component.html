@@ -1,0 +1,14 @@
+<div class="calculadora tamanho container col d-flex justify-content-center">
+    <ol class="list-unstyled row col">
+
+            <li *ngFor ="let cols of rows" class = "row">
+                <div *ngFor="let data of cols" class="col-4">
+                            <img  
+                            class= "img-thumbnail sticky-top float-left"
+                            src="{{data.src.tiny}}">
+                </div>            
+            </li>
+    </ol>
+
+
+    </div>
